@@ -213,5 +213,5 @@ ENV/
 
 /logs/
 /plugins/
-
+**/data/**
 # End of https://www.gitignore.io/api/macos,linux,django,python,pycharm

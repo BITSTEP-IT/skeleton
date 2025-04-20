@@ -1,0 +1,31 @@
+# Airflow
+apache-airflow-providers-trino
+
+# Data Processing
+pandas
+numpy
+Pillow
+pytesseract
+pdf2image
+mammoth
+openpyxl
+python-pptx
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Machine Learning & Embeddings
+torch
+transformers>=4.30.0
+sentence-transformers
+
+# OpenSearch
+opensearch-py
+
+# Computer Vision
+opencv-python-headless
+
+# Utilities
+python-dotenv
+tqdm

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Create necessary directories
-mkdir -p ../dags ../logs ../plugins ../config
+mkdir -p dags logs plugins config
 if [ $? -ne 0 ]; then
   echo "❌ Failed to create directories"
   exit 1
@@ -9,14 +9,14 @@ else
   echo "✅ Finished creating structure"
 fi
 
-# Set environment variable
-echo -e "AIRFLOW_UID=$(id -u)" > ../.env
-if [ $? -ne 0 ]; then
-  echo "❌ Failed to write to .env file"
-  exit 1
-else
-  echo "✅ Finished setting AIRFLOW_UID"
-fi
+# # Set environment variable
+# echo -e "AIRFLOW_UID=$(id -u)" > .env
+# if [ $? -ne 0 ]; then
+#   echo "❌ Failed to write to .env file"
+#   exit 1
+# else
+#   echo "✅ Finished setting AIRFLOW_UID"
+# fi
 
 # Build docker image
 docker build -f docker/Dockerfile -t airflow-with-requirements .
